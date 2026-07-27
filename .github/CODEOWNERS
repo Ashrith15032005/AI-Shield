@@ -1,0 +1,30 @@
+# CODEOWNERS — auto-requests review from the right person on each PR.
+# Replace the placeholder GitHub usernames below with your teammates'.
+# Format: path  @github-username
+
+# Default owner for anything not matched below
+*                               @teammate-1
+
+# Data & feature pipeline
+/src/ingestion/                 @teammate-1
+/src/validation/                @teammate-1
+/src/preprocessing/             @teammate-1
+/src/feature_engineering/       @teammate-1
+/src/feature_store/             @teammate-1
+
+# Model pipeline
+/src/training/                  @teammate-2
+/src/evaluation/                @teammate-2
+/src/explainability/            @teammate-2
+/mlflow/                        @teammate-2
+
+# Serving, security, infra
+/api/                           @teammate-3
+/src/security/                  @teammate-3
+/docker/                        @teammate-3
+/kubernetes/                    @teammate-3
+/.github/workflows/             @teammate-3
+
+# Monitoring & self-healing
+/src/monitoring/                @teammate-2
+/src/self_healing/              @teammate-2

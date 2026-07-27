@@ -1,0 +1,41 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+.pytest_cache/
+.coverage
+coverage.xml
+htmlcov/
+
+# Env
+.env
+.env.local
+
+# Data & models (never commit real data or trained artifacts)
+data/raw/*
+data/processed/*
+data/validated/*
+data/features/*
+data/drift/*
+!data/**/.gitkeep
+models/*.pkl
+models/*.joblib
+models/*.json
+!models/.gitkeep
+
+# MLflow
+mlflow/mlruns/
+mlflow/*.db
+
+# Feature store
+feature_store/*.parquet
+
+# IDE
+.vscode/
+.idea/
+.DS_Store
+
+# Notebooks
+.ipynb_checkpoints/
