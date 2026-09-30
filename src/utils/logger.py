@@ -2,6 +2,7 @@
 Shared structured logger. Import get_logger(__name__) in any module instead of
 calling logging.getLogger directly, so log format stays consistent project-wide.
 """
+
 import logging
 import sys
 

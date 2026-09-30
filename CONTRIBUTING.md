@@ -38,8 +38,8 @@ Types: `feat`, `fix`, `test`, `docs`, `chore`, `refactor`, `perf`
 
 ```bash
 pytest tests/ --cov=src --cov=api --cov-report=term-missing
-bandit -r src api -ll
-pylint src api --exit-zero
+bandit -r src api scripts -ll
+pylint src api scripts
 black src api tests
 isort src api tests
 ```
